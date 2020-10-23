@@ -7,7 +7,7 @@
 /* Header */
 
 header {
-    font-size: 48px;
+    font-size: 100%;
     color: white;
     background-color: grey;
     text-align: center;
@@ -15,24 +15,26 @@ header {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 75%;
+}
+
+.mainnav {
+    display: flex;
+    justify-content: space-evenly;
+ 
 }
 
 nav {
-    text-align: center;
     font-size: 24px;
 
 }
 
-body {
-    text-align: center;
-
-}
-
-image  {
-    border: 20px dotted steelblue; 
+.headimage  {
+    border: 10px dotted whitesmoke; 
     align-content: center;
-    text-align: center;
+    max-width: 20%;
+    height: auto;
+    border-radius: 50%;
 }
 
 main {
@@ -46,3 +48,24 @@ main {
 }
 
 /* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .headimage {
+        width: 75%;
+        height: 75%;
+    }
+
+    .mainnav {
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
