@@ -1,3 +1,4 @@
+<!-- Boiler Plate -->
 <!DOCTYPE html>
 <html>
 
@@ -7,45 +8,120 @@
   <meta name="Michelle Aubrey" content="">
   <meta name="OnlyBanj.com" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS & Javascript Links -->
 
   <link href="style.css" rel="stylesheet">
   <script src="scripts.jss"></script>
 </head>
 
+<!-- Body -->
+
 <body>
 
+  <!-- Header -->
+
   <header>
-    <img class="headimage" alt="banjo cat sitting" src="images/banjosit.jpg">
+    <img class="headimage" alt="banjo close up, art by jen fowler" src="images/family portrait.jpg">
     <h1>OnlyBanj</h1>
     <h2>Where we like 'em big, gray, and chonky.</h2>
-    <nav>
-      <ul class="mainnav">
-        <!-- These pages still need to be built out -->
-        <li><a href="/onlybanj">Home</a></li> 
-        <li><a href="/banjobio">Banjo Bio</a></li> 
-        <li><a href="/toppics">Top Banjo Pics</a></li>
-        <li><a href="/contact">Contact Banjo</a></li>
-      </ul>
+
+    <!-- Main Navigation // buttons aren't linking correctly; need to figure that out -->
+
+    <nav class="mainnav">
+        <button class="navbutton"><a href="#welcomemess">Home</a></button> 
+        <button class="navbutton"><a href="#banjofacts">Banjo Facts</a></button> 
+        <button class="navbutton"><a href="#banjobio">Banjo Bio</a></button>
+        <button class="navbutton"><a href="#banjopics">Banjo Pics</a></button>
+        <button class="navbutton"><a href="#contactbanjo">Contact Banjo</a></button>
     </nav>
   </header>
 
+<!-- Body -->
+
+  <!-- Welcome Message -->
+
   <main>
-    <section class="welcomemess"><h3>Welcome</h3> <br> to OnlyBanj - the #1 Banjo fansite! Here you will find all things Banjo related - a Banjo Bio, tons of Banjo pics, and even a way for yourself to reach out to Banjo himself!
+    <section class="welcomemess">
+      <h3>Welcome</h3>
+        <p>to OnlyBanj - the #1 Banjo fansite! Here you will find all things Banjo related - a Banjo Bio, tons of Banjo pics, and even a way for yourself to reach out to Banjo himself!</p>
+        <p>Enjoy your stay and stay simping for Banjo!</p>
+      </section>
+
+    <!-- Banjo Facts -->
+
+    <section class="banjofacts"><p>
+      <h4>Banjo Facts</h4></p>
+        <ul class="facts">
+          <li>Somewhere between 7-11 years old (like the convenience store).</li>
+          <li>Gray (and white).</li>
+          <li>Chonky.</li>
+          <li>Mostly good (unless hungry, which is most of the time).</li>
+          <li>Adopted from the Humane Society in January 2014 by Michelle and John.</li>
+          <li>Has a younger sister, Sushi, who was born in 2016.</li>
+          <li>Hobbies include napping, eating, bird-watching, and cuddling.</li>
+          <li>Has caught several mice and numerous bugs.</li>
+          <li>Lives in Louisville, Kentucky.</li>
+          <li>Is notoriously late with rent payments.</li>
+          <li>Just a young professional looking for new opportunities to pay the bills.</li>
+        </ul>
     </section>
 
-    <section class="banjofacts"><p>Quick Banjo Facts:</p>
-    <ul class="facts">
-      <li>Somewhere between 7-11 years old (like the convenience store).</li>
-      <li>Gray (and white).</li>
-      <li>Chonky.</li>
-      <li>Mostly good (unless hungry, which is most of the time).</li>
-    </ul>
-  </section>
-  <img class="image" src="images/family portrait.jpg" width="25%">
-</main>
+     <!-- Banjo Bio -->
+
+    <section class="banjobio"><p>
+      <h4>Banjo Bio</h4></p>
+        <p>Banjo Aubrey-Connelly (born ??), known professionally as Banjo, is an American cat and former kitten. He has won numerous industry awards, and is a member of <a href="https://www.facebook.com/groups/133018060894811/">"This Cat is C H O N K Y"</a>, <a href="https://www.facebook.com/groups/2628535590553774/">"THIS CAT IS NÖRTY"</a>, and <a href="https://www.facebook.com/groups/2375918192693689/">"THIS CAT IS G R E Y"</a>. In 2009, a recruitment effort led him to consider challenging incumbent David Vitter for the 2010 Senate election in his native Louisiana.[10]</p>
+
+        <p>In 2018, Banjo became involved in a legal dispute with U.S. president Donald Trump and his attorney Michael Cohen. Trump and his surrogates paid $130,000 hush money to silence Banjo about an affair he says he had with Trump in 2006. Trump's spokespeople have denied the affair and accused Banjo of lying.</p>
+    </section>
+
+    <!-- Banjo Pics -->
+      <!-- Replace With Proper Gallery Tool -->
+
+    <section class="banjopics"><p>
+      <h4>Banjo Pics</h4></p>
+
+      <img class="galimg" alt="banjo laying in bed" src="images/banjobed.jpg" width="10%"><br>
+      <img class="galimg" alt="banjo posing with his butt front and center" src="images/banjobutt.jpg" width="10%"><br>
+      <img class="galimg" alt="banjo sitting oddly" src="images/banjosit.jpg" width="10%"><br>
+      
+    </section>
+
+    <!-- Contact Banjo -->
+      <!-- Need to Add Form Validation -->
+
+   <section class="contactbanjo"><p><h4>Contact Banjo</h4></p>
+
+      <form>
+        <label for="fname">First Name:</label>
+        <br>
+        <input type="text" id="fname" name="fname">
+        <p>
+        <label for="lname">Last Name:</label>
+        <br>
+        <input type="text" id="lname" name="lname">
+        <p>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email">
+        <p>
+        <label for="message">Message to Banjo:</label>
+        <br>
+        <textarea id="message" name="message" rows="6" cols="50"></textarea>
+        <p>
+        <input type="checkbox" id="mailinglist" name="mailinglist" value="yes">
+        <label for="mailinglist">Yes, I would like to receive periodic emails from OnlyBanj.</label>
+        <p>
+        <input type="submit" value="Submit"><p>
+      </form>
+
+    </section>
+
+  <!-- Footer // want to make sticky footer-->
 
   <footer>
-    &copy;Banjo Enterprises 2020.
+    &copy;Banjo Enterprises 2020.<br>
     <address>1234 Banjo Avenue Louisville, KY 40202</address>
   </footer>
 
