@@ -1,11 +1,13 @@
 /* Universal Selector */
 /* 10/29/2020 Need to redo all CSS to fit in with newly updated HTML */
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* * {
+    /* font-family: Arial, Helvetica, sans-serif; */
+/* } */ 
 
 /* Header */
+
+/* Old Code
 
 header {
     font-size: 100%;
@@ -13,7 +15,9 @@ header {
     background-color: grey;
     text-align: center;
     padding: 1%;
-}
+} */
+
+/* 
 
 h2 {
     font-size: 75%;
@@ -46,7 +50,57 @@ main {
 .facts {
     text-align: left;
 
-}
+} */
+/* Begin New Code 11/5/20  */
+
+/* Header */
+
+.header {
+    background: #C4C4C4;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
+
+    }
+
+    /* Header Photo - not cropping right to only show Banjo; need to figure that out*/
+
+        .headimage {
+
+        background: url(family portrait.jpg);
+        border: 2px solid #FFFFFF;
+        position: relative;
+        width: 102px;
+        height: 127px;
+        object-fit: cover;
+        object-position: 20% 10%;
+
+        }
+
+        /* H1 - OnlyBanj */
+
+        h1 {
+
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 48px;
+            color: #000000;
+
+        }
+
+        /* H2 * - Where We Like 'Em Big Gray & Chonky*/
+        
+        h2 {
+
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #F1F1F1;
+
+        }
 
 /* Media Queries */
 
