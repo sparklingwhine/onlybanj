@@ -52,6 +52,50 @@ main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
+/* NavBar CSS */
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #E0A0A0;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #E0A0A0;
+    color: white;
+  }
+
 /* Header */
 
 .header {
@@ -105,16 +149,51 @@ main {
 
 /* Main Navigation */
 
-    .mainnav {
+    .ham {
+        position: absolute;
+        /* always keep ham on top of everything */
+        z-index: 1000;
+        top: 20px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        /* show the menu image */
+        background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+        background-size: 100%;
+      }
 
-    
+      /* change ham image to close */
+    .showClose {
+        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: black;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+            /* hide the menu above the screen by default */
+            transform: translateY(-100%);
+            /* transition adds a little animation when sliding in and out the menu */
+            transition: transform 0.2s ease;
+          }
+
+          .showNav {
+            /* show the menu */
+            transform: translateY(0);
+          }
 
 
-    }
+/* /* Nav Buttons  */
 
-/* Nav Buttons */
-
-    .navbutton:first-child {
+    /* .navbutton:first-child {
 
         font-weight: bold;
         background: #E0A0A0;
@@ -131,7 +210,7 @@ main {
         align-content: center;
         padding: 5%;
 
-    }
+    } */
 
 /* Welcome Section */
 
@@ -210,16 +289,58 @@ footer {
         flex-grow: 1;
     }
     
+    
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+@media only screen and (max-width: 599px) {
+
+    .mainnav {
+        display: none;
+    }
+
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+
+    .topnav {
+
+        display: none;
+    }
+
+/* /* Nav Buttons  */
+
+    .navbutton:first-child {
+
+        font-weight: bold;
+        background: #E0A0A0;
+    }
+
+    .navbutton {
+
+        position: relative;
+        width: 100%;
+        height: 20%;
+        background: #F1F1F1;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        align-content: center;
+        padding: 5%;
+
+    } 
+
+
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+
+
+/* Make Columns */
+
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {...}
