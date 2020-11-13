@@ -12,7 +12,7 @@
   <!-- CSS & Javascript Links -->
 
   <link href="style.css" rel="stylesheet">
-  <script src="scripts.jss"></script>
+
 </head>
 
 <!-- Body -->
@@ -68,6 +68,7 @@
   <!-- Welcome Message -->
 
   <main>
+
     <section class="welcomemess"><a name="welcomemess"></a>
       <h3>Welcome</h3>
         <p>to OnlyBanj - the #1 Banjo fansite! Here you will find all things Banjo related - a Banjo Bio, tons of Banjo pics, and even a way for yourself to reach out to Banjo himself!</p>
@@ -75,8 +76,8 @@
       </section>
 
     <!-- Banjo Facts -->
-
-    <section class="banjofacts"><a name="banjofacts"></a><p>
+    <div class="row">
+    <section class="banjofacts column"><a name="banjofacts"></a><p>
       <h4>Banjo Facts</h4></p>
         <ul class="facts">
           <li>Somewhere between 7-11 years old (like the convenience store).</li>
@@ -95,12 +96,13 @@
 
      <!-- Banjo Bio -->
 
-    <section class="banjobio"><a name="banjobio"></a><p>
+    <section class="banjobio column"><a name="banjobio"></a><p>
       <h4>Banjo Bio</h4></p>
         <p>Banjo Aubrey-Connelly (born ??), known professionally as Banjo, is an American cat and former kitten. He has won numerous industry awards, and is a member of <a href="https://www.facebook.com/groups/133018060894811/">"This Cat is C H O N K Y"</a>, <a href="https://www.facebook.com/groups/2628535590553774/">"THIS CAT IS NÖRTY"</a>, and <a href="https://www.facebook.com/groups/2375918192693689/">"THIS CAT IS G R E Y"</a>. In 2009, a recruitment effort led him to consider challenging incumbent David Vitter for the 2010 Senate election in his native Louisiana.[10]</p>
 
         <p>In 2018, Banjo became involved in a legal dispute with U.S. president Donald Trump and his attorney Michael Cohen. Trump and his surrogates paid $130,000 hush money to silence Banjo about an affair he says he had with Trump in 2006. Trump's spokespeople have denied the affair and accused Banjo of lying.</p>
     </section>
+  </div>
 
     <!-- Banjo Pics -->
 
@@ -140,7 +142,7 @@
         <input type="checkbox" id="mailinglist" name="mailinglist" value="yes">
         <label for="mailinglist">Yes, I would like to receive periodic emails from OnlyBanj.</label>
         <p>
-        <input type="submit" value="Submit"><p>
+        <input type="submit" value="Submit" onclick="validate()"><p>
       </form>
 
     </section>
@@ -151,7 +153,7 @@
     &copy;Banjo Enterprises 2020.<br>
     <address>1234 Banjo Avenue Louisville, KY 40202</address>
   </footer>
-
+  <script src="scripts.js"></script>
 </body>
 
 </html>
