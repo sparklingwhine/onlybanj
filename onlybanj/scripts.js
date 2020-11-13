@@ -22,7 +22,7 @@ function validate(e) {
     if (input.checkValidity()) {
         alert('Thank you for sending a message! Banjo will recite his response to our staff and we will respond to this message as soon as possible.');
     } else {
-        alert('Please provide a valid email address - it looks like your email is not formatted properly (emailaddress@host.com');
+        alert('Please provide a valid email address - it looks like your email is not formatted properly (emailaddress@host.com)');
     }
       
     return false;
