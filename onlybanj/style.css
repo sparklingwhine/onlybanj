@@ -137,6 +137,7 @@ form {
     margin-right: auto;
     justify-content: center;
     text-align: center;
+    width: auto;
 
 }
 
@@ -303,6 +304,7 @@ footer {
 
 .column {
     align-content: center;
+    flex-grow: 1;
   }
   
 
@@ -352,9 +354,11 @@ footer {
 .column {
     flex: 25%;
     padding: 20px;
+    flex-grow: 1;
   }
 
 
 
 
+}
 }
