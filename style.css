@@ -115,6 +115,21 @@
 
 }
 
+.flexpics {
+
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+
+
+}
+
+.flexpics img {
+
+  width: 100%;
+
+}
+
 .galimg {
     display: block;
     margin-left: auto;
@@ -290,9 +305,16 @@ footer {
 
 }
 
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+
+  .flexpics {
+
+    flex-direction: row;
+  }
 
 /* Make Columns */
 
